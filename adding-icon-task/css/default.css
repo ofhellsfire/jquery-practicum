@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Tahoma, sans-serif;
+}
+h3 {
+    font-size: 3em;
+}
+
+div.letter {
+    font-size: 2.5em;
+    color: #ff4136;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0.5em;
+}
+
+div.list {
+    margin-left: 3em;
+}
+
+div.list div {
+    padding: 0.3em;
+}
+
+div.file-icon {
+    display: inline-block;
+    margin-right: 0.5em;
+}
