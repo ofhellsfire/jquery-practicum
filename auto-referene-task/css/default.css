@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+div#container {
+    margin: 0 auto;
+    width: 50%;
+    border: 1px #111 solid;
+    padding: 1em;
+}
+
+div#referencer {
+    background: rgba(197, 250, 250, .6);
+    width: 40%;
+    font-size: 0.8em;
+    border-radius: 1em;
+    padding: 1em;
+    border: 1px #9dc7c7 solid;
+}
