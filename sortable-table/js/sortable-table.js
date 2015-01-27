@@ -45,17 +45,13 @@ function isNumber(value){
 }
 
 function turnToNumber(value){
-    var re = /[,. ]/g;
-    var reSpace = /[ ]/g;
-    var singleSeparator = /^\d+[,.]\d+/g;
-    var t;
-    if(value.match(re)){
-        if(value.match(reSpace)) {
-            t = value.replace(/ /g, "");
+    if(value.match(/[,. ]/g)){
+        if(value.match(/[ ]/g)) {                                   // If there is a space separator:
+            t = value.replace(/ /g, "");                            // remove it from everywhere
         } else {
             t = value;
         }
-        if(t.match(singleSeparator)){
+        if(t.match(/^\d+[,.]\d+/g)){                                // Check if it is a float point number
             return parseFloat(t);
         } else {
             return parseInt(t.replace(/[,.]/g, ""));
