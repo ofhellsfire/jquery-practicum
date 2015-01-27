@@ -36,7 +36,7 @@ function getCellValue(obj, index){
 }
 
 function isNumber(value){
-    var re = /^((?:\d+[., ]+)*(?:\d)+)/gi;
+    var re = /^((?:\d+[., ]+)*(?:\d)+)$/g;
     if(value.match(re)){
         return true;
     } else {
